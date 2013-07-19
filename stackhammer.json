@@ -1,5 +1,6 @@
 {
-  "metaVersion": "1.1.5",
+  "metaVersion": "1.1.6",
+  "accessKey": "guided-tour",
   "puppetVersion": "PUPPET27",
   "environments": [
     {
@@ -7,7 +8,17 @@
       "moduleLocations": [
         "modules"
       ],
+      "nodes": [
+        {
+          "type": "T1_MICRO",
+          "deployState": "RUNNING",
+          "image": "ami-b3345bda",
+          "role": "blogserver",
+          "name": "myblog"
+        }
+      ],
       "name": "production"
     }
-  ]
+  ],
+  "puppetLintEnabled": false
 }

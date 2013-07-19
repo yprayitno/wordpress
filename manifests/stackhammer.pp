@@ -1,0 +1,3 @@
+node myblog {
+  include 'blogserver'
+}
